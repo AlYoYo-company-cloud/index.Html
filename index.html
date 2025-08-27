@@ -1,0 +1,207 @@
+<!doctype html>
+
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yehia Hussein Ahmed — رحلة النجاح</title>
+  <meta name="description" content="Yehia Hussein Ahmed — رائد في الدعم المجتمعي، صانع محتوى ومبتكر تكنولوجي. قناة رحلة النجاح — فرص، كورسات، ومنح." />
+  <link rel="canonical" href="https://username.github.io/yehia-portfolio/" />
+  <meta name="robots" content="index, follow" />  <!-- Open Graph / Social -->  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yehia Hussein Ahmed — رحلة النجاح" />
+  <meta property="og:description" content="بناء فرص حقيقية للشباب — تقنية، تعليم، وتطبيق عملي. انضم لقناة رحلة النجاح لمتابعة فرص العمل، الكورسات والمنح." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" />
+  <meta property="og:locale" content="ar_EG" />
+  <meta name="twitter:card" content="summary_large_image" />  <!-- Preconnect fonts -->  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">  <!-- Favicon (inline SVG) -->  <link rel="icon" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="20" fill="%23063f4a"/><text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-size="46" font-family="Cairo, Arial, sans-serif" fill="%23fff">Y</text></svg>'>  <meta name="theme-color" content="#071427">  <style>
+    :root{
+      --bg1:#0f1724; --bg2:#081125; --glass: rgba(255,255,255,0.06);
+      --accent1:#7c3aed; --accent2:#06b6d4; --muted:#95a3b8;
+      --maxW:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;padding:0;font-family:'Cairo',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,var(--bg1),var(--bg2)); color:#e6eef8; -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale; line-height:1.6;
+    }
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--maxW);margin:0 auto;padding:28px}
+
+    /* Skip link for accessibility */
+    .skip-link{position:absolute;left:1rem;top:1rem;background:#fff;color:#042023;padding:8px 12px;border-radius:8px;z-index:1000;transform:translateY(-120%);transition:transform .18s ease-in-out}
+    .skip-link:focus{transform:translateY(0)}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:22px;box-shadow:0 8px 30px rgba(3,7,18,0.6)}
+    .title{font-size:18px;font-weight:800}
+    .subtitle{font-size:12px;color:var(--muted);margin-top:2px}
+
+    .nav-actions{display:flex;gap:8px;align-items:center}
+    .btn{padding:10px 14px;border-radius:12px;font-weight:600;cursor:pointer}
+    .btn-primary{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#042023;box-shadow:0 10px 30px rgba(7,12,27,0.5)}
+    .btn-ghost{border:1px solid rgba(255,255,255,0.06);background:transparent;color:#dbeafe}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-top:34px}
+    .hero h1{font-size:36px;margin:0 0 10px 0;font-weight:800}
+    .hero p{margin:0;color:var(--muted);max-width:60ch}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:16px;padding:18px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+
+    .profile-img{width:320px;height:320px;border-radius:16px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(135deg,var(--accent2),var(--accent1));box-shadow:0 20px 60px rgba(7,12,27,0.6)}
+    .profile-img img{width:100%;height:100%;object-fit:cover;display:block}
+
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
+    .section{margin-top:28px}
+    h3{margin:0 0 8px 0;font-size:18px}
+    p.small{color:var(--muted);margin:0}
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+    .project{padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .link-row{display:flex;gap:8px;margin-top:12px}
+
+    footer{margin:48px 0 28px 0;color:var(--muted);text-align:center}
+
+    /* responsive */
+    @media(max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .profile-img{width:100%;height:260px}
+      .grid-2{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start}
+      .nav-actions{width:100%;justify-content:flex-end}
+    }
+
+    /* small interactions */
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-weight:700}
+    .muted{color:var(--muted)}
+    .tag{padding:6px 10px;border-radius:10px;background:rgba(255,255,255,0.02);font-size:13px}
+
+    /* subtle entrance */
+    .fade{opacity:0;transform:translateY(8px);animation:fadeIn .7s ease forwards}
+    .delay-1{animation-delay:0.05s}.delay-2{animation-delay:0.12s}.delay-3{animation-delay:0.2s}
+    @keyframes fadeIn{to{opacity:1;transform:none}}
+  </style>  <!-- Structured data (Person) -->  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yehia Hussein Ahmed",
+    "url": "https://username.github.io/yehia-portfolio/",
+    "sameAs": [
+      "https://whatsapp.com/channel/0029VbBnlYn0wajn60XmW92P",
+      "https://t.me/ZAILENDBOT"
+    ],
+    "jobTitle": "رائد في الدعم المجتمعي، صانع محتوى",
+    "description": "بناء فرص حقيقية للشباب — تقنية، تعليم، وتطبيق عملي. قناة رحلة النجاح هي بوابة لنشر الفرص والكورسات والمنح للشباب."
+  }
+  </script></head>
+<body>
+  <a href="#main" class="skip-link">تخطي إلى المحتوى</a>
+  <div class="container" id="main" role="main">
+    <header class="fade delay-1" role="banner">
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">Y</div>
+        <div>
+          <div class="title">Yehia Hussein Ahmed</div>
+          <div class="subtitle">رائد في الدعم المجتمعي · صانع محتوى · مبتكر تكنولوجي</div>
+        </div>
+      </div><nav class="nav-actions" role="navigation" aria-label="روابط التواصل">
+    <a class="btn btn-primary" href="https://whatsapp.com/channel/0029VbBnlYn0wajn60XmW92P" target="_blank" rel="noreferrer" aria-label="زيارة قناة رحلة النجاح على واتساب">قناة رحلة النجاح</a>
+    <a class="btn btn-ghost" href="https://t.me/ZAILENDBOT" target="_blank" rel="noreferrer" aria-label="فتح المساعد على تليجرام">ZAILENDBOT</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="fade delay-2">
+      <h1>بناء فرص حقيقية للشباب — تقنية، تعليم، وتطبيق عملي</h1>
+      <p class="muted">أنا شاب مصري طموح مهتم بالتجارة والتكنولوجيا. أعمل على دمج التجارة الإلكترونية، المنصات التعليمية والذكاء الاصطناعي لصناعة فرص ملموسة للشباب. أقدّم دعمًا عمليًا عبر قناة "رحلة النجاح" ومساعدتي الرسمية على تليجرام.</p>
+
+      <div class="grid-2">
+        <div class="card" aria-labelledby="goals-heading">
+          <h3 id="goals-heading">أهدافي</h3>
+          <ul class="small" style="margin-top:8px;line-height:1.6">
+            <li>تمكين الشباب من فرص عمل وتعلم حقيقية.</li>
+            <li>بناء منصات تعليمية وتجارية فعّالة ومستدامة.</li>
+            <li>تقليل الاعتماد على الاستيراد عبر أفكار تصنيع محلي ذكية.</li>
+          </ul>
+        </div>
+
+        <div class="card" aria-labelledby="hobbies-heading">
+          <h3 id="hobbies-heading">الهوايات</h3>
+          <p class="small">التعلم المستمر، قراءة في التجارة والتكنولوجيا، تجربة أفكار مشاريع جديدة، ومساعدة الشباب في إيجاد فرص وتوجيههم.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>كيف أساعد؟</h3>
+        <p class="small">أقدّم استشارات للمشروعات الناشئة، أفكار لتجربة بيع وتوزيع محلي، ومنهجيات لبناء منصات تعليمية. تستطيع الانضمام للقناة أو التواصل عبر تليجرام للمزيد.</p>
+
+        <div class="link-row">
+          <a class="btn btn-primary" href="mailto:hello@example.com" aria-label="إرسال رسالة عبر البريد">أرسل رسالة</a>
+          <a class="btn btn-ghost" href="#projects" aria-label="عرض المشاريع">مشاريعي</a>
+        </div>
+      </div>
+    </div>
+
+    <aside class="fade delay-3" aria-labelledby="profile-image">
+      <div class="profile-img card">
+        <!-- استبدل src بالصورة الحقيقية في مجلد assets أو رابط خارجي موثوق -->
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Yehia — صورة شخصية" loading="lazy" decoding="async" width="800" height="800" />
+      </div>
+    </aside>
+  </section>
+
+  <section id="projects" class="section">
+    <h3>الأعمال والمشاريع</h3>
+    <div class="projects">
+      <div class="project">
+        <strong>رحلة النجاح</strong>
+        <p class="small">قناة واتساب لفرص العمل والكورسات والمنح، هدفها توصيل الفرص للشباب بسرعة وبدون تعقيد.</p>
+        <div style="margin-top:8px"><a class="tag" href="https://whatsapp.com/channel/0029VbBnlYn0wajn60XmW92P" target="_blank" rel="noreferrer" aria-label="زيارة قناة رحلة النجاح">زيارة القناة</a></div>
+      </div>
+
+      <div class="project">
+        <strong>ZAILENDBOT</strong>
+        <p class="small">المساعد الرسمي على تليجرام للتواصل السريع مع Yehia.</p>
+        <div style="margin-top:8px"><a class="tag" href="https://t.me/ZAILENDBOT" target="_blank" rel="noreferrer" aria-label="فتح ZAILENDBOT">فتح البوت</a></div>
+      </div>
+
+      <div class="project">
+        <strong>أفكار وتجارب</strong>
+        <ul class="small" style="margin-top:8px;line-height:1.5">
+          <li>متجر "كنز" — متجر إلكتروني فاخر (قيد التنفيذ)</li>
+          <li>خدمات تصنيع وشحن لأصحاب المشاريع الصغيرة</li>
+          <li>أبحاث لتقليل الاستيراد وتصنيع محلي رخيص</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section card">
+    <h3>انضم أو تواصل</h3>
+    <p class="small">انضم لقناة رحلة النجاح لتصلك الفرص أو تواصل معي مباشرة عبر التليجرام للمشروعات والاستشارات.</p>
+    <div class="link-row" style="margin-top:12px">
+      <a class="btn btn-primary" href="https://whatsapp.com/channel/0029VbBnlYn0wajn60XmW92P" target="_blank" rel="noreferrer" aria-label="انضم للقناة">انضم للقناة</a>
+      <a class="btn btn-ghost" href="https://t.me/ZAILENDBOT" target="_blank" rel="noreferrer" aria-label="تواصل عبر التليجرام">تواصل عبر التليجرام</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div>© <span id="yr"></span> Yehia Hussein Ahmed — رحلة النجاح</div>
+  <div style="margin-top:6px" class="muted">"رحلة النجاح تبدأ بخطوة"</div>
+</footer>
+
+  </div>  <script>
+    // تحديث السنة تلقائيًا
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // ملاحظات سريعة داخلية:
+    // - استبدل رابط canonical و og:image برابط الريبو/المجلد الفعلي عندما ترفع assets إلى GitHub.
+    // - أنصح برفع صورة شخصية داخل مجلد "assets/img/" و تعديل src للإشارة إليها (مثلاً: /assets/img/yehia.webp)
+    // - يمكنك لاحقًا إضافة ملف manifest.json و favicon مختلف إذا رغبت بصيغة رسمية أكثر.
+  </script></body>
+    </html>
